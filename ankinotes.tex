@@ -2,9 +2,34 @@
 \special{papersize=3in,5in}
 
 \usepackage{amssymb,amsmath}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
 \pagestyle{empty}
 \setlength{\parindent}{0in}
 \begin{document}
-This is my text
+
+\begin{centering}
+  Definition of a metric\\
+\end{centering}
+If X is a set, then a \textbf{metric} on X is a function $d:X\times X \rightarrow \R$ satisfying:
+\begin{itemize}
+  \item $d(x,y) = 0 iff x=y$
+  \item $d(x,y) = d(y,x)$
+  \item $d(x,y) \leq d(x,z) + d(z,y)$
+\end{itemize}
+A pair (X,d) is called a \textbf{metric space}.\par\medskip
+
+Give three examples of a metric space
+\begin{itemize}
+  \item $\R^n$ with "usual (Euclidean) metric": $d_e(a,b) = \sqrt{\sum_{i=1}^n (a_i - b_i)}$
+  \item $\R^2$ with "Manhattan metric": $d_m(x,y) = |x_1 - y_1| + |x_2 - y_2|$
+  \item $\N$ with the "discrete metric": $d_d(n,k) = \begin{cases}
+      0, & \text{if}\ n=k \\
+      1, & \text{if}\ n \neq k
+    \end{cases}$
+\end{itemize}
+
+
 
 \end{document}
