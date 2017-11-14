@@ -4,6 +4,7 @@
 \usepackage{amssymb,amsmath}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
+\providecommand{\st}{\ \text{s.t.}\ }
 
 \pagestyle{empty}
 \setlength{\parindent}{0in}
@@ -31,5 +32,38 @@ Give three examples of a metric space
 \end{itemize}
 
 
+Topology:
+\begin{itemize}
+  \item $\emptyset$, X $\in \tau(d)$
+  \item If U,V $\in \tau(d)$ then U $\cap$ V $\in \tau(d)$
+  \item For any family $\{U_i | i \in I \} \subseteq \tau(d), \ \bigcup\limits_{i\in I} U_i \in \tau(d)$
+\end{itemize}
+
+
+$T_0$\par
+$$ \forall x \neq y, \exists U \in \tau \st |U\cap \{x,y\}|=1$$
+
+$T_1$\par
+$$ \forall x \neq y, \exists U \in \tau | x\in U \ \text{and}\  y \notin U$$
+
+
+$T_2$\par
+$$ \forall x \neq y, \exists U,V \subseteq_{open}X | U \cap V = \emptyset, x \in U, y \in V$$
+
+$Regular$\par
+$$ \forall F \subseteq_{closed}X\ and \ \forall x \notin F, \exists U,V \subseteq_{open}X | U \cap V = \emptyset, x \in U, F \in V$$
+
+$Normal$\par
+$$ \forall A,B \subseteq_{closed}X\ w/ \ A\cap B = \emptyset, \exists U,V \subseteq_{open}X | U \cap V = \emptyset, A \in U, B \in V$$
+
+$Neighborhood$\par
+If X is a space and $x\in X$ then A$\subseteq$X is called a \textbf{neighborhood} of x if
+$$ \exists U_{open} | x\in U \subseteq A $$
+
+A set U$\subseteq$X is open iff (neighborhoods)
+$\forall x \in U$ there is a nhood V of x $|$ V$\subseteq$U
+
+$closure$\\
+$\overline{\rm A}$ = \{$x\in X |$ every open $U\ni x$ meets A\}
 
 \end{document}
